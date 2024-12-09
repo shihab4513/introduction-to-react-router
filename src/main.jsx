@@ -27,6 +27,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/users',
+        // here we are loading data from api using loader in user component
+        loader:()=>fetch('https://jsonplaceholder.typicode.com/users'),
         element:<Users></Users>
       }
     ]

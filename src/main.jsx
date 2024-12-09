@@ -6,15 +6,25 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './Components/Home/Home.jsx';
+import About from './Components/About/About.jsx';
+import Contact from './Components/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello from react router!!!</div>,
-  },
-  {
-    path:'/about',
-    element: <div>I am in the about page!!!</div>
+    element: <Home></Home>,
+    // Children is an example of nested routing 
+    children:[
+      {
+        path:'/about',
+        element:<About></About>
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
+      }
+    ]
   }
 ]);
 

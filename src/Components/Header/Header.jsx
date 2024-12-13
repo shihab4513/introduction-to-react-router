@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Header/Header.css'
 import { Link } from 'react-router-dom'
+
 const Header = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const Header = () => {
             {/* There is a problem with anchor , if we want to go another page , its always reload. To overcome this problem we will use <Link> tag. Example of it shown below */}
             <Link to={'/'}>Home</Link>
             <Link to={'/users'}>Users</Link>
+            <Link to={'/posts'}>Posts</Link>
             <Link to={'/about'}>About</Link>
             <Link to={'contact'}>Contact Us</Link>
         </nav>

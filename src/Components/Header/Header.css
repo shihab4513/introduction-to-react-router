@@ -1,3 +1,8 @@
 nav a{
     margin-right: 20px;
 }
+/* below code basically does if navlink is clicked it will show underline */
+nav a.active{
+    text-decoration: underline;
+    color: peru;
+}
